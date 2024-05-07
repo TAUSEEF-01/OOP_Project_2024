@@ -1,4 +1,4 @@
-module org.example.demo {
+module com.example.demo {
     requires javafx.controls;
     requires javafx.fxml;
     requires javafx.web;
@@ -10,9 +10,8 @@ module org.example.demo {
     requires org.kordamp.bootstrapfx.core;
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
+    requires java.sql;
 
-    opens org.example.demo to javafx.fxml;
-    exports org.example.demo;
-    exports org.example.javafx;
-    opens org.example.javafx to javafx.fxml;
+    opens com.example.demo to javafx.fxml;
+    exports com.example.demo;
 }
