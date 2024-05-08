@@ -1,14 +1,20 @@
 package com.example.demo;
 
+import javafx.application.Platform;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.event.ActionEvent;
+import javafx.stage.StageStyle;
 
+import java.io.IOException;
 import java.net.URL;
 
 import java.sql.Connection;
@@ -24,6 +30,9 @@ public class LoginController implements Initializable {
     private Button cancelButton;
 
     @FXML
+    private Button LoginScreenSignupButton;
+
+    @FXML
     private Label loginMessageLabel;
 
     @FXML
@@ -37,6 +46,7 @@ public class LoginController implements Initializable {
 
     }
 
+
     public void loginButtonOnAction(ActionEvent event) {
 
         if(!enterUsernameField.getText().isEmpty() && !enterPasswordField.getText().isEmpty()) {
@@ -45,6 +55,7 @@ public class LoginController implements Initializable {
             loginMessageLabel.setText("Please enter your username and password");
         }
     }
+
 
     public void validateLogin(){
 
@@ -60,6 +71,12 @@ public class LoginController implements Initializable {
             while(queryResult.next()) {
                 if(queryResult.getInt(1) == 1) {
                     loginMessageLabel.setText("You have successfully logged in!");
+                    teacherLogin();
+
+                    Stage stage = (Stage) LoginScreenSignupButton.getScene().getWindow();
+                    stage.close();
+
+//                    createAccountForm();
                 } else {
                     loginMessageLabel.setText("Invalid login!");
                 }
@@ -71,9 +88,50 @@ public class LoginController implements Initializable {
     }
 
 
+    public void teacherLogin() {
+        try {
+            Parent root2 = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            Stage teacherPanelStage = new Stage();
+//            registerStage.initStyle(StageStyle.UNDECORATED);
+            teacherPanelStage.setScene(new Scene(root2, 900, 580));
+            teacherPanelStage.setResizable(false);
+            teacherPanelStage.show();
+
+        } catch(Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+
+    public void createAccountForm() {
+        try {
+            Parent root2 = FXMLLoader.load(getClass().getResource("register.fxml"));
+            Stage registerStage = new Stage();
+//            registerStage.initStyle(StageStyle.UNDECORATED);
+            registerStage.setScene(new Scene(root2, 900, 580));
+            registerStage.setResizable(false);
+            registerStage.show();
+
+        } catch(Exception e) {
+            e.printStackTrace();
+            e.getCause();
+        }
+    }
+
+
+    public void signUpButtonOnAction(ActionEvent actionEvent) {
+        createAccountForm();
+
+        Stage stage = (Stage) LoginScreenSignupButton.getScene().getWindow();
+        stage.close();
+    }
+
+
     public void cancelButtonOnAction(ActionEvent actionEvent) {
         Stage stage = (Stage) cancelButton.getScene().getWindow();
         stage.close();
+        Platform.exit();
     }
 
 }
