@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4ade552e-e352-464e-9424-958cd3b8859f" name="Changes" comment="" />
+    <list default="true" id="4ade552e-e352-464e-9424-958cd3b8859f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/HelloApplication.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +33,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "Tauseef",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/Downloads/DUCSE Documents/2nd year/OOP/OOP_Project/OOP_Project_2024",
     "node.js.detected.package.eslint": "true",
