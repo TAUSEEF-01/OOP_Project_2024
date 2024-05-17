@@ -83,11 +83,15 @@ public class RegisterController implements Initializable {
         String lastname = lastnameTextField.getText();
         String email = emailTextField.getText();
         String roll = rollTextField.getText();
-        String username = regstrationTextField.getText();
+        String registration = regstrationTextField.getText();
         String password = setPasswordField.getText();
 
-        String insertFields = "INSERT INTO user_account (last_name, first_name, username, password) VALUES ('";
-        String insertValues = firstname + "','" + lastname + "','" + username + "','" + password + "')";
+//        String insertFields = "INSERT INTO user_account (last_name, first_name, username, password) VALUES ('";
+//        String insertValues = firstname + "','" + lastname + "','" + username + "','" + password + "')";
+
+
+        String insertFields = "INSERT INTO new_table (last_name, first_name, email, registration_no, roll_no, password) VALUES ('";
+        String insertValues = firstname + "','" + lastname + "','" + email + "','" + registration + "','" + roll + "','" + password + "')";
         String insertToRegister = insertFields + insertValues;
 
         try {

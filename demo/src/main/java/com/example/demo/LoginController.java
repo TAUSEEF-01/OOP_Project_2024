@@ -62,7 +62,7 @@ public class LoginController implements Initializable {
         DatabaseConnection connectNow = new DatabaseConnection();
         Connection connectDB = connectNow.getConnection();
 
-        String verifyLogin = "SELECT count(1) FROM user_account WHERE username = '" + enterUsernameField.getText() + "' AND password = '" + enterPasswordField.getText() + "'";
+        String verifyLogin = "SELECT count(1) FROM new_table WHERE registration_no = '" + enterUsernameField.getText() + "' AND password = '" + enterPasswordField.getText() + "'";
 
         try {
             Statement statement = connectDB.createStatement();
@@ -70,13 +70,21 @@ public class LoginController implements Initializable {
 
             while(queryResult.next()) {
                 if(queryResult.getInt(1) == 1) {
+                    
                     loginMessageLabel.setText("You have successfully logged in!");
-                    teacherLogin();
 
-                    Stage stage = (Stage) LoginScreenSignupButton.getScene().getWindow();
+                    try {
+                        Thread.sleep(1000);
+                    } catch (InterruptedException e) {
+                        e.printStackTrace();
+                    }
+                    main_page();
+//
+////                    Stage stage = (Stage) LoginScreenSignupButton.getScene().getWindow();
+////                    stage.close();
+//
+                    Stage stage = (Stage) cancelButton.getScene().getWindow();
                     stage.close();
-
-//                    createAccountForm();
                 } else {
                     loginMessageLabel.setText("Invalid login!");
                 }
@@ -88,9 +96,9 @@ public class LoginController implements Initializable {
     }
 
 
-    public void teacherLogin() {
+    public void main_page() {
         try {
-            Parent root2 = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            Parent root2 = FXMLLoader.load(getClass().getResource("main_page.fxml"));
             Stage teacherPanelStage = new Stage();
 //            registerStage.initStyle(StageStyle.UNDECORATED);
             teacherPanelStage.setScene(new Scene(root2, 900, 580));

@@ -13,17 +13,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHomeTypeForPersistence" value="WRAPPER" />
-      </MavenGeneralSettings>
-    </option>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 6
@@ -33,44 +29,57 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.HelloApplication.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.com.example.demo.login.executor": "Run",
-    "Application.login.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Downloads/DUCSE Documents/2nd year/OOP/javaFX_practice/folder1/demo/src/main/resources/com/example/demo",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.ChitChatApp.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HelloApplication.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Launcher.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.client.executor&quot;: &quot;Run&quot;,
+    &quot;Application.com.example.demo.login.executor&quot;: &quot;Run&quot;,
+    &quot;Application.login.executor&quot;: &quot;Run&quot;,
+    &quot;Application.server.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Downloads/DUCSE Documents/2nd year/OOP/javaFX_practice/folder1/demo&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\main\resources\com\example\demo" />
-      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\lib" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\main\resources" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\main\java\com\example\demo" />
+      <recent name="C:\Users\MD. TAUSEEF\AppData\Roaming\JetBrains\IntelliJIdea2024.1\extensions" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\main\resources\com\example\demo" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\lib" />
       <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\main\java\com\example\demo" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\chat" />
+      <recent name="D:\Downloads\DUCSE Documents\2nd year\OOP\javaFX_practice\folder1\demo\src\main\resources\com\example\demo" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.demo" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" singleton="false" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.example.demo.HelloApplication" />
       <module name="demo" />
       <extension name="coverage">
@@ -83,19 +92,44 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="client" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.client.client" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="server" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.demo.server.server" />
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.demo.server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.client" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.server" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.client" />
+        <item itemvalue="Application.server" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-jdk-9f38398b9061-39b83d9b5494-intellij.indexing.shared.core-IU-241.15989.150" />
-        <option value="bundled-js-predefined-1d06a55b98c1-91d5c284f522-JavaScript-IU-241.15989.150" />
-      </set>
-    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -108,7 +142,20 @@
       <workItem from="1715080926984" duration="6588000" />
       <workItem from="1715089454650" duration="622000" />
       <workItem from="1715090093433" duration="67000" />
-      <workItem from="1715094357942" duration="17491000" />
+      <workItem from="1715094357942" duration="18621000" />
+      <workItem from="1715123891931" duration="1171000" />
+      <workItem from="1715147430009" duration="5959000" />
+      <workItem from="1715156678743" duration="10890000" />
+      <workItem from="1715170976102" duration="4354000" />
+      <workItem from="1715191492699" duration="485000" />
+      <workItem from="1715240361520" duration="1199000" />
+      <workItem from="1715260919411" duration="1271000" />
+      <workItem from="1715278886628" duration="1296000" />
+      <workItem from="1715366293946" duration="5108000" />
+      <workItem from="1715425161071" duration="9322000" />
+      <workItem from="1715511398437" duration="22890000" />
+      <workItem from="1715599326538" duration="11293000" />
+      <workItem from="1715618566076" duration="2890000" />
     </task>
     <servers />
   </component>
