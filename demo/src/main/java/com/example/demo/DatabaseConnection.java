@@ -7,7 +7,9 @@ public class DatabaseConnection {
     public Connection databaseLink;
 
     public Connection getConnection() {
-        String databaseName = "demo_db";
+//        String databaseName = "demo_db";
+
+        String databaseName = "registration";
         String databaseUser = "root";
         String databasePassword = "password";
         String url = "jdbc:mysql://127.0.0.1:3306/" + databaseName;

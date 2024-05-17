@@ -248,7 +248,7 @@ public class ClientFormController {
 
     public void redirectMainPage() {
         try {
-            Parent root2 = FXMLLoader.load(getClass().getResource("server.fxml"));
+            Parent root2 = FXMLLoader.load(getClass().getResource("main_page.fxml"));
             Stage loginStage = new Stage();
 //            loginStage.initStyle(StageStyle.UNDECORATED);
             loginStage.setScene(new Scene(root2, 900, 580));

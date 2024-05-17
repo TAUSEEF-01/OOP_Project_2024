@@ -9,6 +9,7 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
+import javafx.stage.StageStyle;
 
 import java.io.*;
 
@@ -27,12 +28,14 @@ public class main_page {
 
         Parent root = null;
         try {
-            root = FXMLLoader.load(getClass().getResource("client.fxml"));
+//            root = FXMLLoader.load(getClass().getResource("client.fxml"));
+            root = FXMLLoader.load(getClass().getResource("ChatBot.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         Stage stage = new Stage();
+//        stage.initStyle(StageStyle.UNDECORATED);
         stage.setScene(new Scene(root, 900, 580));
         stage.setResizable(false);
         stage.show();
