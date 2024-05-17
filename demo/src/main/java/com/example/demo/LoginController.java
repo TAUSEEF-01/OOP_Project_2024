@@ -90,7 +90,7 @@ public class LoginController implements Initializable {
 
     public void teacherLogin() {
         try {
-            Parent root2 = FXMLLoader.load(getClass().getResource("hello-view.fxml"));
+            Parent root2 = FXMLLoader.load(getClass().getResource("com.example.demo.server.fxml"));
             Stage teacherPanelStage = new Stage();
 //            registerStage.initStyle(StageStyle.UNDECORATED);
             teacherPanelStage.setScene(new Scene(root2, 900, 580));
