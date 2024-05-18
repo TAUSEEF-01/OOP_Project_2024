@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.ListView;
 
 import java.io.IOException;
@@ -32,11 +33,15 @@ public class AssignmentController {
         System.out.println("Assignment List - " + assignmentListView.getItems()); // checking
     }
 
-    public void returnHome(ActionEvent event) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/studentHomePage.fxml"));
+    public void homeOnAction(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("student_mainPage.fxml"));
         Parent root = fxmlLoader.load();
 
-        ((Node) event.getSource()).getScene().setRoot(root);
+        // Get the scene from the current event source
+        Scene currentScene = ((Node) event.getSource()).getScene();
+
+        // Set the new root in the current scene
+        currentScene.setRoot(root);
     }
 
 }

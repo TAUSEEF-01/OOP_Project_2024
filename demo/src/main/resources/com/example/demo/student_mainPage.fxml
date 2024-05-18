@@ -54,7 +54,7 @@
             <Font size="18.0" />
          </font>
       </Button>
-      <Button fx:id="RL2" layoutX="39.0" layoutY="374.0" mnemonicParsing="false" onAction="#RLOnAction" prefHeight="50.0" prefWidth="350.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Assignment">
+      <Button layoutX="39.0" layoutY="374.0" mnemonicParsing="false" onAction="#assignmentButtonOnAction" prefHeight="50.0" prefWidth="350.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Assignment">
          <font>
             <Font size="18.0" />
          </font>
