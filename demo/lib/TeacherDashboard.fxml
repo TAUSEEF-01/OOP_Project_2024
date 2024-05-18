@@ -19,11 +19,11 @@
     <children>
         <VBox layoutX="20" layoutY="20" prefHeight="580.0" prefWidth="850.0" spacing="10">
             <!-- Header Section -->
-            <HBox prefHeight="45.0" prefWidth="855.0" spacing="10.0" style="-fx-background-color: #336699; -fx-padding: 10;">
-                <Label fx:id="teacherNameLabel" prefHeight="25.0" prefWidth="445.0" style="-fx-font-size: 20px; -fx-text-fill: white;" text="Welcome, [Teacher Name]" />
+            <HBox prefHeight="45.0" prefWidth="855.0" spacing="10.0">
+                <Label fx:id="teacherNameLabel" prefHeight="30.0" prefWidth="556.0" style="-fx-font-size: 20px; -fx-text-fill: white;" text="Welcome to Teacher Panel" />
             <ImageView fitHeight="30.0" fitWidth="565.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../Images/Logout_Button.png" />
+                  <Image url="@../src/main/resources/com/example/demo/Images/Logout_Button.png" />
                </image>
                <HBox.margin>
                   <Insets left="500.0" />
