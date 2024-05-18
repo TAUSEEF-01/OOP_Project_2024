@@ -1,6 +1,8 @@
 package com.example.demo.client;
 
 
+import com.example.demo.StudentLogin;
+
 import java.io.*;
 import java.net.*;
 import java.util.*;
@@ -18,7 +20,12 @@ public class ClientHandler implements Runnable {
             this.socket = socket;
             this.buffWriter = new BufferedWriter(new OutputStreamWriter(socket.getOutputStream()));
             this.buffReader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
-            name = "ab" + id;
+//            name = "ab" + id;
+
+            this.name = StudentLogin.student.fname;
+
+            System.out.println("Accessed first name from RegisterController: " + name);
+
 
             clientHandlers.add(this);
             boradcastMessage("SERVER " + name + " has entered in the room");
@@ -47,7 +54,7 @@ public class ClientHandler implements Runnable {
     }
 
     public void boradcastMessage(String messageToSend) {
-        messageToSend = name + ": " + messageToSend;
+        messageToSend = messageToSend;
         System.out.println(messageToSend);
 
         for (ClientHandler clientHandler : clientHandlers) {

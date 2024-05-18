@@ -28,8 +28,8 @@ public class main_page {
 
         Parent root = null;
         try {
-//            root = FXMLLoader.load(getClass().getResource("client.fxml"));
-            root = FXMLLoader.load(getClass().getResource("ChatBot.fxml"));
+            root = FXMLLoader.load(getClass().getResource("message.fxml"));
+//            root = FXMLLoader.load(getClass().getResource("ChatBot.fxml"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
