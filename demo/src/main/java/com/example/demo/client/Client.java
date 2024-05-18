@@ -3,7 +3,6 @@ package com.example.demo.client;
 
 import java.io.*;
 import java.net.*;
-import java.util.*;
 
 public class Client {
     // private classes for the com.example.demo.client
@@ -31,8 +30,8 @@ public class Client {
 
     public void sendMessage(String messageToSend) {
         try {
-            System.out.println(messageToSend);
-//            tempMessage = messageToSend;
+            System.out.println(this.name + ": " + messageToSend);
+            tempMessage = this.name + ": " + messageToSend;
 
             buffWriter.write(messageToSend);
             buffWriter.newLine();

@@ -41,7 +41,7 @@ public class ChatBotController {
         stage.close();
 
         try {
-            Parent root2 = FXMLLoader.load(getClass().getResource("main_page.fxml"));
+            Parent root2 = FXMLLoader.load(getClass().getResource("student_mainPage.fxml"));
             Stage registerStage = new Stage();
 //            registerStage.initStyle(StageStyle.UNDECORATED);
             registerStage.setScene(new Scene(root2, 900, 580));
