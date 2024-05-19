@@ -28,7 +28,8 @@ import java.net.URL;
 import java.util.*;
 
 
-public class TeacherDashBoardController implements Initializable {
+public class
+TeacherDashBoardController implements Initializable {
 
     @FXML
     private Label teacherNameLabel;
@@ -36,6 +37,11 @@ public class TeacherDashBoardController implements Initializable {
     private Stage stage;
     private Scene scene;
     private FXMLLoader fxmlLoader;
+    private String teacherName;
+
+    public void setTeacherName(String name){
+        this.teacherName = name;
+    }
 
     public TeacherDashBoardController() throws IOException {
     }
@@ -43,11 +49,15 @@ public class TeacherDashBoardController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+
+
+
         assignmentNotification.setText("");
 
 
         setAssignmentMarkVBox.setVisible(false);
-        setExamMarkVBox.setVisible(false);
+        submissionsVBox.setVisible(false);
+//        setExamMarkVBox.setVisible(false);
 
         availableCoursesVbox.setVisible(false);
         Collections.addAll(availableCourses, courses);
@@ -84,16 +94,16 @@ public class TeacherDashBoardController implements Initializable {
             }
         });
 
-        examListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
-            @Override
-            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
-                selectedExamSubject = examListView.getSelectionModel().getSelectedItem();
-                if(selectedExamSubject != null){
-                    setExamMarkVBox.setVisible(true);
-                }
-                System.out.println(selectedExamSubject);
-            }
-        });
+//        examListView.getSelectionModel().selectedItemProperty().addListener(new ChangeListener<String>() {
+//            @Override
+//            public void changed(ObservableValue<? extends String> observable, String oldValue, String newValue) {
+//                selectedExamSubject = examListView.getSelectionModel().getSelectedItem();
+//                if(selectedExamSubject != null){
+//                    setExamMarkVBox.setVisible(true);
+//                }
+//                System.out.println(selectedExamSubject);
+//            }
+//        });
         // setting listener for each listview - end
 
         // Initialize the Timeline for showing messages
@@ -115,7 +125,7 @@ public class TeacherDashBoardController implements Initializable {
     public void logOut(ActionEvent event) throws IOException {
 
         System.out.println("Hello world");
-        fxmlLoader = new FXMLLoader(getClass().getResource("FXML/LogInPage.fxml"));
+        fxmlLoader = new FXMLLoader(getClass().getResource("TeacherLogin.fxml"));
         Parent parent  = fxmlLoader.load();
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -125,7 +135,7 @@ public class TeacherDashBoardController implements Initializable {
     }
 
     public void switchToStudentPannel(ActionEvent event) throws IOException {
-        fxmlLoader = new FXMLLoader(getClass().getResource("FXML/studentHomePage.fxml"));
+        fxmlLoader = new FXMLLoader(getClass().getResource("student_mainPage.fxml"));
         Parent parent  = fxmlLoader.load();
 
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
@@ -173,7 +183,6 @@ public class TeacherDashBoardController implements Initializable {
 
             // adding subject to assignmentView
             assignmentListView.getItems().add(selectedAvailableSubject);
-            examListView.getItems().add(selectedAvailableSubject);
 
             // adding course to Central Course Management System
             Central_Course_MS.addCourse(selectedAvailableSubject, Central_Course_MS.getCourseID(selectedAvailableSubject), ""); // checking ---> LogInPage.teacherName
@@ -209,7 +218,6 @@ public class TeacherDashBoardController implements Initializable {
 
             courseListView.getItems().remove(subject);
             assignmentListView.getItems().remove(subject);
-            examListView.getItems().remove(subject);
         }
     }
 
@@ -220,12 +228,15 @@ public class TeacherDashBoardController implements Initializable {
 // Assignment Management - start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     @FXML
     VBox setAssignmentMarkVBox;
-
     @FXML
     Label assignmentNotification;
-
     @FXML
     TextField assignmentMarkTextField;
+
+    @FXML
+    VBox submissionsVBox;
+    @FXML
+    ListView<String> submissionsListView;
 
 
     @FXML
@@ -293,34 +304,18 @@ public class TeacherDashBoardController implements Initializable {
     @FXML
     public void handleViewSubmissions(ActionEvent event) {
         // Logic to view submissions of assignments
+        submissionsVBox.setVisible(true);
         System.out.println("View Submissions clicked");
+        System.out.println(Central_Course_MS.submittedAssignments);
+        if(!Central_Course_MS.submittedAssignments.isEmpty()){
+            submissionsListView.getItems().remove(submissionsListView.getItems());
+            submissionsListView.getItems().addAll(Central_Course_MS.submittedAssignments);
+        }
+    }
+
+    public void closeSubmissionListView(ActionEvent event){
+        submissionsVBox.setVisible(false);
     }
 
 // Assignment Management - end >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-
-// Exam Management - start <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
-
-    @FXML
-    private ListView<String> examListView;
-    @FXML
-    private VBox setExamMarkVBox;
-
-    private String selectedExamSubject;
-
-    @FXML
-    public void handleScheduleExam(ActionEvent event) {
-        // Logic to schedule a new exam
-        System.out.println("Schedule Exam clicked");
-        setExamMarkVBox.setVisible(false);
-
-
-    }
-
-    @FXML
-    public void handleViewExams(ActionEvent event) {
-        // Logic to view scheduled exams
-        System.out.println("View Exams clicked");
-    }
-
-// Exam Management - start >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 }

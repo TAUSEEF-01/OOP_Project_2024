@@ -103,7 +103,10 @@ public class TeacherLogin implements Initializable {
 
                 Parent root = null;
                 try {
-                    root = FXMLLoader.load(getClass().getResource("FXML/TeacherDashboard.fxml"));
+                    FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/TeacherDashboard.fxml"));
+                    root = fxmlLoader.load();
+                    TeacherDashBoardController teacherDashBoardController = fxmlLoader.getController();
+                    teacherDashBoardController.setTeacherName(enterUsernameField.getText());
 //                      root = FXMLLoader.load(getClass().getResource("ChatBot.fxml"));
                 } catch (IOException e) {
                     throw new RuntimeException(e);

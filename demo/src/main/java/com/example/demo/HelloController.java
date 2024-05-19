@@ -100,9 +100,12 @@ public class HelloController {
     }
 
 
-    public void assignmentButtonOnAction(ActionEvent event) throws IOException {
+    public void assignmentButtonOnAction(ActionEvent event) throws IOException { // assignments section
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/Assignments.fxml"));
         Parent root = fxmlLoader.load();
+
+        AssignmentController assignmentController = fxmlLoader.getController();
+        assignmentController.fillList(Central_Course_MS.assignments);
 
         // Get the scene from the current event source
         Scene currentScene = ((Node) event.getSource()).getScene();
@@ -148,6 +151,17 @@ public class HelloController {
 
     public void logout(ActionEvent event) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("StudentLogin.fxml"));
+        Parent root = fxmlLoader.load();
+
+        // Get the scene from the current event source
+        Scene currentScene = ((Node) event.getSource()).getScene();
+
+        // Set the new root in the current scene
+        currentScene.setRoot(root);
+    }
+
+    public void switchToTeacher(ActionEvent event) throws IOException {
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("FXML/TeacherDashboard.fxml"));
         Parent root = fxmlLoader.load();
 
         // Get the scene from the current event source
