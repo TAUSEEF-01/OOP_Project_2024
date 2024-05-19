@@ -20,12 +20,12 @@
       <Button layoutX="59.0" layoutY="267.0" mnemonicParsing="false" onAction="#cseOnAction" prefHeight="54.0" prefWidth="342.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="DSA Book" />
       <Button layoutX="59.0" layoutY="349.0" mnemonicParsing="false" onAction="#mathOnAction" prefHeight="54.0" prefWidth="342.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Math Book" />
       <Button layoutX="59.0" layoutY="427.0" mnemonicParsing="false" onAction="#mybookOnAction" prefHeight="54.0" prefWidth="342.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="My Book" />
-      <TextField fx:id="searching" alignment="CENTER" layoutX="455.0" layoutY="44.0" prefHeight="319.0" prefWidth="410.0" promptText="Search What Do You Want" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
       <Label fx:id="searchLabel" alignment="CENTER" layoutX="455.0" layoutY="44.0" prefHeight="319.0" prefWidth="410.0" style="-fx-background-radius: 40; -fx-border-radius: 40; -fx-border-color: black;">
          <font>
             <Font size="16.0" />
          </font>
       </Label>
+      <TextField fx:id="searching" alignment="CENTER" layoutX="455.0" layoutY="44.0" prefHeight="319.0" prefWidth="410.0" promptText="Search What Do You Want" style="-fx-background-radius: 40; -fx-border-radius: 40;" />
       <Button fx:id="searchbutton" layoutX="523.0" layoutY="390.0" mnemonicParsing="false" onAction="#searchOnAction" prefHeight="45.0" prefWidth="274.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Search" />
       <Button fx:id="addbutton" layoutX="59.0" layoutY="36.0" mnemonicParsing="false" onAction="#addOnAction" prefHeight="38.0" prefWidth="108.0" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="Add" />
       <TextField fx:id="bookpath" alignment="CENTER" layoutX="177.0" layoutY="36.0" prefHeight="38.0" prefWidth="220.0" promptText="add new book path" style="-fx-border-radius: 40; -fx-background-radius: 40; -fx-border-color: black;" />
