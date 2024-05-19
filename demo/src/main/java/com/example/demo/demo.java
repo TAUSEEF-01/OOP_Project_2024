@@ -227,8 +227,8 @@ public class demo {
 
         // Get today's day of the week and date
         LocalDate today = LocalDate.now();
-        // String dayOfWeek = today.getDayOfWeek().toString();
-        String dayOfWeek ="Tuesday";
+         String dayOfWeek = today.getDayOfWeek().toString();
+       // String dayOfWeek ="Tuesday";
         String formattedDate = today.format(DateTimeFormatter.ofPattern("MMMM dd, yyyy"));
 
         // Filter today's classes

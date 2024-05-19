@@ -40,13 +40,13 @@ public class Resources implements Initializable {
 
     public void mathOnAction(ActionEvent event) {
         openbook math= new openbook();
-        math.boolocation= "/home/ubuntu/Papry Edu/Math/Linear-Algebra-11th-2013.pdf";
+        math.boolocation= "D:\\Downloads\\DUCSE Documents\\2nd year\\EEE\\Books\\Chapter 1-2 11th Edition Solutions.pdf";
         math.open();
     }
 
     public void cseOnAction(ActionEvent event) {
         openbook dsa= new openbook();
-        dsa.boolocation= "/home/ubuntu/Papry Edu/DSA/dsa_corman.pdf";
+        dsa.boolocation= "D:\\Downloads\\DUCSE Documents\\2nd year\\EEE\\Books\\Chapter 1-2 11th Edition Solutions.pdf";
         dsa.open();
     }
 
@@ -85,7 +85,7 @@ public class Resources implements Initializable {
 
     public void eeeonAction(ActionEvent event) {
         openbook eee= new openbook();
-        eee.boolocation="/home/ubuntu/Papry Edu/EEE/Electronic_Devices_and_Circuit_Theory_11th_Boylestad_Solutions.pdf";
+        eee.boolocation="D:\\Downloads\\DUCSE Documents\\2nd year\\EEE\\Books\\Chapter 1-2 11th Edition Solutions.pdf";
         eee.open();
 
     }
@@ -95,7 +95,7 @@ public class Resources implements Initializable {
 
     public void OOPonAction(ActionEvent actionEvent) {
         openbook eee= new openbook();
-        eee.boolocation="/home/ubuntu/Papry Edu/OOP/Java - The Complete Reference - 11 Edition.pdf";
+        eee.boolocation="D:\\Downloads\\DUCSE Documents\\2nd year\\EEE\\Books\\Chapter 1-2 11th Edition Solutions.pdf";
         eee.open();
 
     }

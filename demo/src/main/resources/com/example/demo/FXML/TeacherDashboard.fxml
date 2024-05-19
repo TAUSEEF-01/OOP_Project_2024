@@ -19,8 +19,8 @@
     <children>
         <VBox layoutX="20" layoutY="20" prefHeight="580.0" prefWidth="850.0" spacing="10">
             <!-- Header Section -->
-            <HBox prefHeight="45.0" prefWidth="855.0" spacing="10.0" style="-fx-background-color: #336699; -fx-padding: 10;">
-                <Label fx:id="teacherNameLabel" prefHeight="25.0" prefWidth="445.0" style="-fx-font-size: 20px; -fx-text-fill: white;" text="Welcome, [Teacher Name]" />
+            <HBox prefHeight="45.0" prefWidth="855.0" spacing="10.0">
+                <Label fx:id="teacherNameLabel" prefHeight="30.0" prefWidth="556.0" style="-fx-font-size: 20px; -fx-text-fill: black;" text="Welcome to Teacher Panel" />
             <ImageView fitHeight="30.0" fitWidth="565.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../Images/Logout_Button.png" />
@@ -70,6 +70,7 @@
                                 <Button onAction="#handleDeleteCourse" text="Remove Course" />
                             </HBox>
                         </VBox>
+                  <Button layoutX="776.0" layoutY="442.0" mnemonicParsing="false" onAction="#logOut" text="Log Out" />
                     </AnchorPane>
                 </Tab>
 
@@ -99,28 +100,15 @@
                         <Font size="49.0" />
                      </font>
                   </Label>
-                    </AnchorPane>
-                </Tab>
-
-                <!-- Exam Management Tab -->
-                <Tab closable="false" text="Exam Management">
-                    <AnchorPane>
-                        <VBox fx:id="examListVBox" layoutX="10" layoutY="10" spacing="10">
-                            <Label style="-fx-font-size: 16px;" text="Courses" />
-                            <ListView fx:id="examListView" prefHeight="200" prefWidth="265.0" />
-                            <HBox spacing="10">
-                                <Button onAction="#handleScheduleExam" text="Schedule Exam" />
-                                <Button onAction="#handleViewExams" text="View Exams" />
-                            </HBox>
-                        </VBox>
-                  <VBox fx:id="setExamMarkVBox" layoutX="286.0" layoutY="10.0" prefHeight="264.0" prefWidth="190.0" spacing="10.0">
+                  <VBox fx:id="submissionsVBox" layoutX="522.0" layoutY="12.0" prefHeight="260.0" prefWidth="312.0" spacing="10.0">
                      <children>
-                        <Label prefHeight="17.0" prefWidth="181.0" text="Set Exam Mark">
+                        <Label prefHeight="6.0" prefWidth="100.0" text="Submissions">
                            <font>
-                              <Font size="17.0" />
+                              <Font size="16.0" />
                            </font>
                         </Label>
-                        <TextField fx:id="assignmentMarkTextField1" prefHeight="24.0" prefWidth="119.0" promptText="Total Marks" />
+                        <ListView fx:id="submissionsListView" prefHeight="210.0" prefWidth="253.0" />
+                        <Button mnemonicParsing="false" onAction="#closeSubmissionListView" prefHeight="24.0" prefWidth="71.0" text="Close" />
                      </children>
                   </VBox>
                     </AnchorPane>

@@ -64,5 +64,6 @@
             <Font size="18.0" />
          </font>
       </Button>
+      <Button layoutX="837.0" layoutY="540.0" mnemonicParsing="false" onAction="#switchToTeacher" opacity="0.06" styleClass="signUpScreenLeftButton" stylesheets="@CSS/SignupScreen.css" text="TM" />
    </children>
 </AnchorPane>

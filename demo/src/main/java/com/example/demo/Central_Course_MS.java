@@ -8,6 +8,7 @@ public class Central_Course_MS {
     public static Map<String, String> courseID = new HashMap<>();
     public static Map<Course, List<Student>> studentUnderCouse = new HashMap<>();
     public static List<String> assignments = new ArrayList<>();
+    public static List<String> submittedAssignments = new ArrayList<>();
 
     public static void Initiate(){
 

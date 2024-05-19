@@ -31,7 +31,7 @@ public class Client {
     public void sendMessage(String messageToSend) {
         try {
             System.out.println(this.name + ": " + messageToSend);
-            tempMessage = this.name + ": " + messageToSend;
+            tempMessage = messageToSend;
 
             buffWriter.write(messageToSend);
             buffWriter.newLine();
