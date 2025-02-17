@@ -1,20 +1,44 @@
-The Teacher-Student Portal is a web-based application designed as a usable platform for teachers and students. It offers features like assignment submissions, grade tracking, forums, course management, to-do lists, and schedules. This portal helps students manage their academic tasks and stay organized while simplifying course management and resource distribution for teachers. It creates a cohesive and efficient academic environment with all essential tools in one user-friendly interface.
+# 📚 Teacher-Student Portal
 
-**Tools**  
-1. IDE: IntelliJ  
-2. Language: JAVA  
-3. Framework: JavaFx  
-4. Database: MySQL  
-5. Testing: Manual testing for overall system functionality
+The **Teacher-Student Portal** is a web-based application designed to provide an efficient and user-friendly platform for both teachers and students. 🎓👩‍🏫
 
-We have uploaded the UML diagram and screenshots of the schema for your easy understanding. Download the Zip file and run `HelloApplication.java`.
+## 🌟 Features
 
-**Authors**  
-- Papry Rahman  
-- Md. Tauseef Ur Rahman  
-- Anirban Roy Sourav
+- 📑 **Assignment Submissions**
+- 📊 **Grade Tracking**
+- 💬 **Forums for Discussions**
+- 📚 **Course Management**
+- ✅ **To-Do Lists**
+- 📅 **Schedules**
 
- Project images :
+This portal enables students to manage their academic tasks effectively while streamlining course management and resource distribution for teachers. It creates a cohesive and productive academic environment with all essential tools in one place. 🏫✨
+
+---
+
+## 🛠 Tech Stack
+
+| Component  | Technology |
+|------------|------------|
+| **IDE** | IntelliJ |
+| **Language** | JAVA |
+| **Framework** | JavaFX |
+| **Database** | MySQL |
+| **Testing** | Manual Testing |
+
+🔹 **Additional Resources**: We have uploaded the UML diagram and schema screenshots for your convenience. Download the Zip file and run `HelloApplication.java` to get started! 🚀
+
+---
+
+## 👥 Authors
+
+- **Papry Rahman**
+- **Md. Tauseef Ur Rahman**
+- **Anirban Roy Sourav**
+
+---
+
+## 📸 Project Images
+
  <image src = "Screenshots/2_registration.jpg">
  <image src = "Screenshots/login.jpg">
  <image src = "Screenshots/studentdashboard.jpg">
@@ -26,3 +50,6 @@ We have uploaded the UML diagram and screenshots of the schema for your easy und
  <image src = "Screenshots/chatbot.jpg">
  <image src = "Screenshots/studentsviewofassignment.jpg">
  <image src = "Screenshots/course_selection_teacher.png">
+
+
+Happy Coding! 🎯
